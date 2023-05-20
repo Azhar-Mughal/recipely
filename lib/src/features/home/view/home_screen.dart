@@ -141,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         (BuildContext context,
                                             StateSetter bottomSheetState) {
                                       return FractionallySizedBox(
-                                        heightFactor: 0.55,
+                                        heightFactor: 0.58,
                                         child: Padding(
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 22),
