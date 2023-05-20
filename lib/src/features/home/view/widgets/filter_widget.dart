@@ -16,9 +16,7 @@ class FilterWidget extends StatelessWidget {
       onPressed: filterOnPressed,
       color: HexColor("#00838f"),
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all(
-          HexColor("#00838f"),
-        ),
+        backgroundColor: MaterialStateProperty.all(HexColor("#00838f")),
         shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
