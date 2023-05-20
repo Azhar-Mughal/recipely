@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:recipely/src/constants/constants.dart';
 import 'package:recipely/src/extensions/extensions.dart';
@@ -42,6 +43,23 @@ class ListWidget extends StatelessWidget {
                       foodModel.image!,
                       fit: BoxFit.cover,
                       height: 130,
+                      loadingBuilder: (BuildContext context, Widget child,
+                          ImageChunkEvent? loadingProgress) {
+                        if (loadingProgress == null) {
+                          return child;
+                        }
+                        return Center(
+                          child: CircularProgressIndicator(
+                            value: loadingProgress.expectedTotalBytes != null
+                                ? loadingProgress.cumulativeBytesLoaded /
+                                    loadingProgress.expectedTotalBytes!
+                                : null,
+                            color: HexColor("#00838f"),
+                            backgroundColor:
+                                CupertinoColors.extraLightBackgroundGray,
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ),
