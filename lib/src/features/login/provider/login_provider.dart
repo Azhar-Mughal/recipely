@@ -8,6 +8,9 @@ import '../../../constants/constants.dart';
 import '../../home/home.dart';
 
 class LoginProvider extends ChangeNotifier {
+  /// Variables
+  /// Text editing controllers, focus nodes, form keys etc..
+
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   FocusNode emailFocusNode = FocusNode();
@@ -16,6 +19,10 @@ class LoginProvider extends ChangeNotifier {
   final formKey = GlobalKey<FormState>();
   bool obscurePassword = true;
 
+  /// Firebase auth login
+  /// We already have an user registered
+  /// Test credentials are below
+  /// email =>azharmughal007786@gmail.com,  password ==> Azhar123@
   FirebaseAuth auth = FirebaseAuth.instance;
 
   doLogin(BuildContext context, LoginRequest loginRequest) async {

@@ -6,6 +6,8 @@ import 'package:recipely/src/constants/constants.dart';
 import '../home.dart';
 
 class HomeProvider extends ChangeNotifier {
+  /// Variables
+  /// For display loading, food list, filtered list
   bool showLoading = true;
   bool filterApplied = false;
   List<Recipe> foodsList = [];
@@ -13,6 +15,9 @@ class HomeProvider extends ChangeNotifier {
 
   TextEditingController searchController = TextEditingController();
 
+  /// Fetching food recipes list from firebase fire store
+  /// This will be a List of Map
+  /// Map is an object of recipe that contains Image,title,chef,id's etc
   fetchRecipes() async {
     try {
       FirebaseFirestore.instance
@@ -40,6 +45,10 @@ class HomeProvider extends ChangeNotifier {
 
   List<Categories> categoriesList = [];
 
+  /// Fetching categories list from firebase fire store
+  /// This will be a List of Map
+  /// Map is an object of categories that contains id and name
+
   fetchCategories() async {
     try {
       FirebaseFirestore.instance
@@ -62,6 +71,10 @@ class HomeProvider extends ChangeNotifier {
   }
 
   List<Cuisine> cuisineList = [];
+
+  /// Fetching Cuisines list from firebase fire store
+  /// This will be a List of Map
+  /// Map is an object of cuisine that contains id and name
 
   fetchCuisines() async {
     try {
