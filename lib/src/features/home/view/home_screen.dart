@@ -40,7 +40,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: CupertinoColors.lightBackgroundGray,
                 child: Column(
                   children: [
-                    const RecipelyAppBarWidget(appBarText: searchText),
+                    const RecipelyAppBarWidget(
+                      appBarText: searchText,
+                      backgroundColor: CupertinoColors.lightBackgroundGray,
+                    ),
                     Container(
                       height: 90,
                       color: CupertinoColors.lightBackgroundGray,

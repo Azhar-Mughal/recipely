@@ -7,16 +7,18 @@ import '../utils/utils.dart';
 
 class RecipelyAppBarWidget extends StatelessWidget implements PreferredSize {
   final String appBarText;
+  final Color backgroundColor;
 
   const RecipelyAppBarWidget({
     Key? key,
     required this.appBarText,
+    required this.backgroundColor,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: backgroundColor,
       elevation: 0,
       title: RecipelyTextWidget(
         text: appBarText,
