@@ -1,6 +1,6 @@
 # recipely - Made with Flutter 🩵
 
-Recipely is a demonstration of food recipe app🩵
+Recipely is a demonstration of food recipe app.
 
 **Live Preview**
 
