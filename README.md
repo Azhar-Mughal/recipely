@@ -1,6 +1,6 @@
-# recipely
+# recipely - Made with Flutter 🩵
 
-Recipely is a food recipe app developed with Flutter 🩵
+Recipely is a demonstration of food recipe app🩵
 
 **Live Preview**
 
