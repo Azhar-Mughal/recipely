@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "238622014554",
+    "project_id": "recipely-beb4c",
+    "storage_bucket": "recipely-beb4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238622014554:android:cc38b3b4d776c6f592ac63",
+        "android_client_info": {
+          "package_name": "com.example.recipely"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238622014554-ip5toscg6d3a0rnneggaub7ul34p4vqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFUQE3I082URxjIkHGEgxKvVGYi_uy7mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238622014554-ip5toscg6d3a0rnneggaub7ul34p4vqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
