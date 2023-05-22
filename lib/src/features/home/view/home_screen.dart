@@ -240,6 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 buttonBackgroundColor:
                                                     HexColor("#00838f"),
                                                 onPressed: () {
+                                                  /// Extracting selected categories
                                                   List<Categories>
                                                       selectedCategories = [];
                                                   for (var i = 0;
@@ -256,6 +257,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                                               .categoriesList[i]);
                                                     }
                                                   }
+
+                                                  /// Extracting selected selected cuisines
+
                                                   List<Cuisine>
                                                       selectedCuisineList = [];
                                                   for (var i = 0;
@@ -271,10 +275,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     }
                                                   }
 
+                                                  /// Clear filtered list before applying filter
                                                   bottomSheetState(() {
                                                     provider.filteredFoodList
                                                         .clear();
                                                   });
+
+                                                  /// Checking for selected categories list
+                                                  /// Applying filter on the food list
                                                   for (var i = 0;
                                                       i <
                                                           provider
@@ -299,6 +307,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     }
                                                   }
 
+                                                  /// Checking for cuisine list in food
+                                                  /// Apply filter if ids matched with food list
                                                   for (var i = 0;
                                                       i <
                                                           provider
