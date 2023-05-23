@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:recipely/src/common_widgets/common_widgets.dart';
 import 'package:recipely/src/constants/constants.dart';
 import 'package:recipely/src/extensions/extensions.dart';
 import 'package:recipely/src/features/home/models/models.dart';
-
-import '../../../../common_widgets/common_widgets.dart';
 
 class ListWidget extends StatelessWidget {
   final Recipe foodModel;
