@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipely/src/common_widgets/common_widgets.dart';
 import 'package:recipely/src/extensions/extensions.dart';
-
-import '../../login/login.dart';
+import 'package:recipely/src/features/login/login.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
